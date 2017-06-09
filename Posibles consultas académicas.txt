@@ -1,0 +1,11 @@
+* Consultar la lista de estudiantes matriculados en tal fecha.
+* Consultar los promedios obtenidos por los estudiantes en una seccion de un grado y un año academico.
+* Consultar las notas de los estudiantes individual.
+* Consultar matriculas, en un rango de fecha, en una fecha determinada, o de un año académico.
+* Consultar los responsables de los estudiantes, por parentesco, por apellido.
+* Consultar estudiantes por sección, año, turno y grado.
+* Consultar estudiantes reprobados.
+* Consultar la cantidad de estudiantes reprobados en un determinado año académico.
+* Consultar docentes que imparten asignaturas.
+* Consultar docentes que iniciaron su labor en el colegio y que aún están activos.
+* Consultar docentes que terminaron su labor en que fecha y porqué causa.

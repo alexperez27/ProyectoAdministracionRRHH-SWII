@@ -1,0 +1,116 @@
+c:\users\14ac111la\documents\visual studio 2013\Projects\Sistema académico\Sistema académico\bin\Debug\Sistema_académico.exe.config
+c:\users\14ac111la\documents\visual studio 2013\Projects\Sistema académico\Sistema académico\bin\Debug\Sistema_académico.exe
+c:\users\14ac111la\documents\visual studio 2013\Projects\Sistema académico\Sistema académico\bin\Debug\Sistema_académico.pdb
+c:\users\14ac111la\documents\visual studio 2013\Projects\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.dll
+c:\users\14ac111la\documents\visual studio 2013\Projects\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.UI.dll
+c:\users\14ac111la\documents\visual studio 2013\Projects\Sistema académico\Sistema académico\bin\Debug\TelerikCommon.dll
+c:\users\14ac111la\documents\visual studio 2013\Projects\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.xml
+c:\users\14ac111la\documents\visual studio 2013\Projects\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.UI.xml
+c:\users\14ac111la\documents\visual studio 2013\Projects\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.csprojResolveAssemblyReference.cache
+c:\users\14ac111la\documents\visual studio 2013\Projects\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Principal.resources
+c:\users\14ac111la\documents\visual studio 2013\Projects\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Properties.Resources.resources
+c:\users\14ac111la\documents\visual studio 2013\Projects\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.csproj.GenerateResource.Cache
+c:\users\14ac111la\documents\visual studio 2013\Projects\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.exe.licenses
+c:\users\14ac111la\documents\visual studio 2013\Projects\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.exe
+c:\users\14ac111la\documents\visual studio 2013\Projects\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.pdb
+c:\users\14ac111la\documents\visual studio 2013\Projects\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Login.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Paneles.Gestionar_informacion.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Citas.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Parentesco.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Maestros_guías.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Paneles.Matricula.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Paneles.Asignar_notas.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Modificar_nota.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Paneles.Usuarios.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Paneles.Deshabilitados.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Sistema_académico.exe.config
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.exe
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.pdb
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Sistema_académico.exe
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Sistema_académico.pdb
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.dll
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\TelerikCommon.dll
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.xml
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.UI.xml
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.csprojResolveAssemblyReference.cache
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Citas.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Login.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Paneles.Gestionar_informacion.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Paneles.Usuarios.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Principal.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Properties.Resources.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.csproj.GenerateResource.Cache
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.exe.licenses
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Paneles.Reporte_de_nomina.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Paneles.Reporte_nomina_empleados.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Cargo.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Paneles.Gestion_de_asistencias.resources
+C:\Users\14AC111LA\Documents\Visual Studio 2013\Projects\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Paneles.Nomina.resources
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Sistema_académico.exe.config
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.exe
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.pdb
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.csprojResolveAssemblyReference.cache
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Citas.resources
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Login.resources
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Paneles.Gestionar_informacion.resources
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Paneles.Gestion_de_asistencias.resources
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Paneles.Nomina.resources
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Paneles.Reporte_de_nomina.resources
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Paneles.Reporte_nomina_empleados.resources
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Paneles.Usuarios.resources
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Presentación.Cargo.resources
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Principal.resources
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.Properties.Resources.resources
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.csproj.GenerateResource.Cache
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Sistema_académico.exe
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Sistema_académico.pdb
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.exe.licenses
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\MySql.Data.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Microsoft.AnalysisServices.AdomdClient.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.ChartView.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.GridView.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.PivotGrid.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.RadDock.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.Scheduler.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.Themes.Aqua.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.Themes.Breeze.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.Themes.Desert.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.Themes.Office2007Silver.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.Themes.Office2010Blue.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.Themes.Office2010Silver.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.Themes.Office2013Dark.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.Themes.Office2013Light.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.Themes.TelerikMetroBlue.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Dark.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.Themes.VisualStudio2012Light.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.UI.Design.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.UI.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\TelerikCommon.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\TelerikData.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.RadChart.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.RadMarkupEditor.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.RadDiagram.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.PdfViewer.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.Themes.HighContrastBlack.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.RadMap.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.RichTextEditor.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Microsoft.mshtml.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Microsoft.MSXML.dll
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.ChartView.xml
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.GridView.xml
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.PivotGrid.xml
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.RadDock.xml
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.Scheduler.xml
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.UI.xml
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\TelerikData.xml
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.RadChart.xml
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.RadMarkupEditor.xml
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.RadDiagram.xml
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.PdfViewer.xml
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.RadMap.xml
+G:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Telerik.WinControls.RichTextEditor.xml
+D:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\bin\Debug\Sistema_académico.exe.config
+D:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.exe
+D:\UNI\III Año\SWI\Proyecto de curso\PROYECTO DE SOFTWARE\Sistema académico\Sistema académico\obj\x86\Debug\Sistema_académico.pdb

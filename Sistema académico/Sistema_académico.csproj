@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{459E58AE-5913-4EB3-93D5-AB20BDEF31EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sistema_académico</RootNamespace>
+    <AssemblyName>Sistema_académico</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AnalysisServices.AdomdClient, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.ChartView, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.ChartView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.GridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.PivotGrid, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.PivotGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.RadDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Scheduler, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.Scheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.Themes.Aqua.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.Themes.Breeze.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.Themes.Desert.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.Themes.Office2007Silver.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.Themes.Office2010Blue.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.Themes.Office2010Silver.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2013Dark, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.Themes.Office2013Dark.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2013Light, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.Themes.Office2013Light.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.Themes.TelerikMetroBlue.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.Themes.VisualStudio2012Dark.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.Themes.VisualStudio2012Light.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI.Design, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\Telerik.WinControls.UI.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\TelerikCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikData, Version=2016.3.1024.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLusados\TelerikData.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datos\Conexion.cs" />
+    <Compile Include="Datos\DEmpleado.cs" />
+    <Compile Include="Negocio\NEmpleados.cs" />
+    <Compile Include="Presentación\Citas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentación\Citas.Designer.cs">
+      <DependentUpon>Citas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentación\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\Metodos\Metodo.cs" />
+    <Compile Include="Presentación\Paneles\Gestionar_informacion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentación\Paneles\Gestionar_informacion.Designer.cs">
+      <DependentUpon>Gestionar_informacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\Paneles\Gestion_de_asistencias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentación\Paneles\Gestion_de_asistencias.Designer.cs">
+      <DependentUpon>Gestion_de_asistencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\Paneles\Nomina.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentación\Paneles\Nomina.Designer.cs">
+      <DependentUpon>Nomina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\Paneles\Reporte_de_nomina.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentación\Paneles\Reporte_de_nomina.Designer.cs">
+      <DependentUpon>Reporte_de_nomina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\Paneles\Reporte_nomina_empleados.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentación\Paneles\Reporte_nomina_empleados.Designer.cs">
+      <DependentUpon>Reporte_nomina_empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\Paneles\Usuarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentación\Paneles\Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\Cargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentación\Cargo.Designer.cs">
+      <DependentUpon>Cargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentación\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentación\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Presentación\Citas.resx">
+      <DependentUpon>Citas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\Paneles\Gestionar_informacion.resx">
+      <DependentUpon>Gestionar_informacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\Paneles\Gestion_de_asistencias.resx">
+      <DependentUpon>Gestion_de_asistencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\Paneles\Nomina.resx">
+      <DependentUpon>Nomina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\Paneles\Reporte_de_nomina.resx">
+      <DependentUpon>Reporte_de_nomina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\Paneles\Reporte_nomina_empleados.resx">
+      <DependentUpon>Reporte_nomina_empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\Paneles\Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\Cargo.resx">
+      <DependentUpon>Cargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentación\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--sirinie -->
+    <Content Include="Foto docentes\Ana Trujilo.png" />
+    <Content Include="Foto docentes\Andrew Fuller.png" />
+    <Content Include="Foto docentes\Brenda Smith.png" />
+    <Content Include="Foto docentes\Elizabeth Lincoln.png" />
+    <Content Include="Foto docentes\Georg Pipps.png" />
+    <Content Include="Foto docentes\Hanna Moos.png" />
+    <Content Include="Foto docentes\Janet Levering.png" />
+    <Content Include="Foto docentes\Janine Labrune.png" />
+    <Content Include="Foto docentes\Jason Roland.png" />
+    <Content Include="Foto docentes\Jeremy Boather.png" />
+    <Content Include="Foto docentes\John Steel.png" />
+    <Content Include="Foto docentes\Karin Josephs.png" />
+    <Content Include="Foto docentes\Karl Jablonski.png" />
+    <Content Include="Foto docentes\Laura Callahan.png" />
+    <Content Include="Foto docentes\Margaret Peacock.png" />
+    <Content Include="Foto docentes\Marie Bertrand.png" />
+    <Content Include="Foto docentes\Martin Sommer.png" />
+    <Content Include="Foto docentes\Mary Saveley.png" />
+    <Content Include="Foto docentes\Nancy Davolio.png" />
+    <Content Include="Foto docentes\Paula Wilson.png" />
+    <Content Include="Foto docentes\Pedro Alfonso.png" />
+    <Content Include="Foto docentes\Robert King.png" />
+    <Content Include="Foto docentes\settingsBlack.png" />
+    <Content Include="Foto docentes\Steven Buchanan.png" />
+    <Content Include="Foto docentes\Viktoria Ashworth.png" />
+    <Content Include="Imágenes\1-documents.png" />
+    <Content Include="Imágenes\1-new-folder.png" />
+    <Content Include="Imágenes\2-advanced-security.png" />
+    <Content Include="Imágenes\3-details.png" />
+    <Content Include="Imágenes\about_paint.png" />
+    <Content Include="Imágenes\Add.png" />
+    <Content Include="Imágenes\buttonDelete.png" />
+    <Content Include="Imágenes\ChangeEditingPermissions32.png" />
+    <Content Include="Imágenes\chart-first-look.png" />
+    <Content Include="Imágenes\charts-selected.png" />
+    <Content Include="Imágenes\dashboard-selected.png" />
+    <Content Include="Imágenes\DraftFolder.png" />
+    <Content Include="Imágenes\Edit.png" />
+    <Content Include="Imágenes\female.png" />
+    <Content Include="Imágenes\Folder.png" />
+    <Content Include="Imágenes\HighlightMergeFields.png" />
+    <Content Include="Imágenes\home-pressed.png" />
+    <Content Include="Imágenes\Home2.png" />
+    <Content Include="Imágenes\Image.png" />
+    <Content Include="Imágenes\InsertBookmark32.png" />
+    <Content Include="Imágenes\InsertCitation.png" />
+    <Content Include="Imágenes\InsertDateTime32.png" />
+    <Content Include="Imágenes\inspectdocument.png" />
+    <Content Include="Imágenes\issues.png" />
+    <Content Include="Imágenes\Load.png" />
+    <Content Include="Imágenes\male.png" />
+    <Content Include="Imágenes\Matricular.png" />
+    <Content Include="Imágenes\msoffice_chart.png" />
+    <Content Include="Imágenes\msoffice_menu_digitalsignature.png" />
+    <Content Include="Imágenes\new.png" />
+    <Content Include="Imágenes\NewComment.png" />
+    <Content Include="Imágenes\no-image.png" />
+    <Content Include="Imágenes\open16.png" />
+    <Content Include="Imágenes\OutlookViewCalendar.png" />
+    <Content Include="Imágenes\OutlookViewContacts.png" />
+    <Content Include="Imágenes\OutlookViewTasks.png" />
+    <Content Include="Imágenes\Padre.png" />
+    <Content Include="Imágenes\Paste6.png" />
+    <Content Include="Imágenes\Poesía.jpg" />
+    <Content Include="Imágenes\print161.png" />
+    <Content Include="Imágenes\properties32.png" />
+    <Content Include="Imágenes\ProtectDocument32.png" />
+    <Content Include="Imágenes\refresh3.png" />
+    <Content Include="Imágenes\ribbon_help_big.png" />
+    <Content Include="Imágenes\ribbon_print_preview.png" />
+    <Content Include="Imágenes\save32.png" />
+    <Content Include="Imágenes\SaveAppointment.png" />
+    <Content Include="Imágenes\schedule-selected.png" />
+    <Content Include="Imágenes\search.png" />
+    <Content Include="Imágenes\security_icon.png" />
+    <Content Include="Imágenes\sum.png" />
+    <Content Include="Imágenes\Symbol Stop2.png" />
+    <Content Include="Imágenes\TableOfContents.png" />
+    <Content Include="Imágenes\TrackChanges.png" />
+    <Content Include="Imágenes\user.png" />
+    <Content Include="Imágenes\versions.png" />
+    <None Include="Resources\page_white_acrobat.png" />
+    <None Include="Resources\equipo.png" />
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
