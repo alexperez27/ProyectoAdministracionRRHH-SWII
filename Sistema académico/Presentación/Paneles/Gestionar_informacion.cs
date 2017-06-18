@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sistema_académico.Datos;
 using Sistema_académico.Negocio;
+using System.Threading;
 
 namespace Sistema_académico.Presentación.Paneles
 {
@@ -17,10 +18,35 @@ namespace Sistema_académico.Presentación.Paneles
        
         public Gestionar_informacion()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            cargarTablaEmpleados(); 
         }
 
-    /*-----------------------------PANEL DE ESTUDIANTES-----------------------------------------*/
+        private void cargarTablaEmpleados()
+        {
+            Thread myThread = new Thread(() =>
+            {
+                DataTable datos = NEmpleados.reporteEmpleados();
+                if (datos != null)
+                {
+                    this.Invoke(new Action(() => {
+                        dataTableEstudiantes.Columns.Clear();
+                        dataTableEstudiantes.DataSource = datos;
+                        //this.dataTableEstudiantes.Columns[0].IsVisible = false;
+                    }));
+                }
+                else
+                {
+                    this.Invoke(new Action(() => {
+                        MessageBox.Show(this, "No se pudo cargar la información de los empleados", "Error al cargar información");
+                    }));
+                }
+            });
+            myThread.Start();
+
+        }
+
+        /*-----------------------------PANEL DE ESTUDIANTES-----------------------------------------*/
         private void labelParentesco_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Cargo parent = new Cargo();
@@ -140,5 +166,5 @@ namespace Sistema_académico.Presentación.Paneles
             }
 
         }
-    }
+    }        
 }

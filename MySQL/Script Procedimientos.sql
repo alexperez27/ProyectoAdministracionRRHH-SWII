@@ -52,10 +52,10 @@ Direccion varchar(45),
 Cedula varchar(45),
 Telefono varchar(45),
 Estado varchar(45),
-`Fichas Ocupacionales_idFichas Ocupacionales` int,
+`Fichas_Ocupacionales_idFichas_Ocupacionales` int,
 FechaContratacion varchar(45))
 begin 
- insert into empleado(Nombre,Apellido,Direccion,Cedula,Telefono,Estado,`Fichas Ocupacionales_idFichas Ocupacionales`,FechaContratacion) values(Nombre,Apellido,Direccion,Cedula,Telefono,Estado,`Fichas Ocupacionales_idFichas Ocupacionales`,FechaContratacion); 
+ insert into empleado(Nombre,Apellido,Direccion,Cedula,Telefono,Estado,`Fichas_Ocupacionales_idFichas_Ocupacionales`,FechaContratacion) values(Nombre,Apellido,Direccion,Cedula,Telefono,Estado,`Fichas_Ocupacionales_idFichas_Ocupacionales`,FechaContratacion); 
  end$$ 
  DELIMITER ;
 
@@ -70,11 +70,11 @@ Direccion varchar(45),
 Cedula varchar(45),
 Telefono varchar(45),
 Estado varchar(45),
-`Fichas Ocupacionales_idFichas Ocupacionales` int,
+`Fichas_Ocupacionales_idFichas_Ocupacionales` int,
 FechaContratacion varchar(45))
 begin 
  update empleado 
- set Nombre=Nombre,Apellido=Apellido,Direccion=Direccion,Cedula=Cedula,Telefono=Telefono,Estado=Estado,`Fichas Ocupacionales_idFichas Ocupacionales`=`Fichas Ocupacionales_idFichas Ocupacionales`,FechaContratacion=FechaContratacion
+ set Nombre=Nombre,Apellido=Apellido,Direccion=Direccion,Cedula=Cedula,Telefono=Telefono,Estado=Estado,`Fichas_Ocupacionales_idFichas_Ocupacionales`=`Fichas_Ocupacionales_idFichas_Ocupacionales`,FechaContratacion=FechaContratacion
 where idEmpleado=idEmpleado; 
  end$$ 
  DELIMITER ;
@@ -102,12 +102,12 @@ begin
 drop procedure if exists sp_insertarEmpleadoHasHorario;
 DELIMITER $$
 create procedure sp_insertarEmpleadoHasHorario(
-`Empleado_Fichas Ocupacionales_idFichas Ocupacionales` int,
+`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales` int,
 Horario_idHorario int,
 Horario_DiaSemana_idDiaSemana int)
 begin 
- insert into empleado_has_horario(`Empleado_Fichas Ocupacionales_idFichas Ocupacionales`,Horario_idHorario,Horario_DiaSemana_idDiaSemana)
- values(`Empleado_Fichas Ocupacionales_idFichas Ocupacionales`,Horario_idHorario,Horario_DiaSemana_idDiaSemana); 
+ insert into empleado_has_horario(`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`,Horario_idHorario,Horario_DiaSemana_idDiaSemana)
+ values(`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`,Horario_idHorario,Horario_DiaSemana_idDiaSemana); 
  end$$ 
  DELIMITER ;
 
@@ -116,12 +116,12 @@ drop procedure if exists sp_modificarEmpleadoHasHorario;
 DELIMITER $$
 create procedure sp_modificarEmpleadoHasHorario(
 Empleado_idEmpleado int,
-`Empleado_Fichas Ocupacionales_idFichas Ocupacionales` int,
+`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales` int,
 Horario_idHorario int,
 Horario_DiaSemana_idDiaSemana int)
 begin 
  update empleado_has_horario 
- set `Empleado_Fichas Ocupacionales_idFichas Ocupacionales`=`Empleado_Fichas Ocupacionales_idFichas Ocupacionales`,Horario_idHorario=Horario_idHorario,Horario_DiaSemana_idDiaSemana=Horario_DiaSemana_idDiaSemana
+ set `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`=`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`,Horario_idHorario=Horario_idHorario,Horario_DiaSemana_idDiaSemana=Horario_DiaSemana_idDiaSemana
 where Empleado_idEmpleado=Empleado_idEmpleado; 
  end$$ 
  DELIMITER ;
@@ -149,10 +149,10 @@ begin
 drop procedure if exists sp_insertarEmpleadoHasVacaciones;
 DELIMITER $$
 create procedure sp_insertarEmpleadoHasVacaciones(
-`Empleado_Fichas Ocupacionales_idFichas Ocupacionales` int,
+`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales` int,
 Vacaciones_idVacaciones int)
 begin 
- insert into empleado_has_vacaciones(`Empleado_Fichas Ocupacionales_idFichas Ocupacionales`,Vacaciones_idVacaciones) values(`Empleado_Fichas Ocupacionales_idFichas Ocupacionales`,Vacaciones_idVacaciones); 
+ insert into empleado_has_vacaciones(`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`,Vacaciones_idVacaciones) values(`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`,Vacaciones_idVacaciones); 
  end$$ 
  DELIMITER ;
 
@@ -161,11 +161,11 @@ drop procedure if exists sp_modificarEmpleadoHasVacaciones;
 DELIMITER $$
 create procedure sp_modificarEmpleadoHasVacaciones(
 Empleado_idEmpleado int,
-`Empleado_Fichas Ocupacionales_idFichas Ocupacionales` int,
+`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales` int,
 Vacaciones_idVacaciones int)
 begin 
  update empleado_has_vacaciones 
- set `Empleado_Fichas Ocupacionales_idFichas Ocupacionales`=`Empleado_Fichas Ocupacionales_idFichas Ocupacionales`,Vacaciones_idVacaciones=Vacaciones_idVacaciones
+ set `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`=`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`,Vacaciones_idVacaciones=Vacaciones_idVacaciones
 where Empleado_idEmpleado=Empleado_idEmpleado; 
  end$$ 
  DELIMITER ;
@@ -197,10 +197,10 @@ Fecha date,
 HoraEntrada time,
 HoraSalida time,
 Empleado_idEmpleado int,
-`Empleado_Fichas Ocupacionales_idFichas Ocupacionales` int)
+`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales` int)
 begin 
- insert into entradasalida(Fecha,HoraEntrada,HoraSalida,Empleado_idEmpleado,`Empleado_Fichas Ocupacionales_idFichas Ocupacionales`) 
- values(Fecha,HoraEntrada,HoraSalida,Empleado_idEmpleado,`Empleado_Fichas Ocupacionales_idFichas Ocupacionales`); 
+ insert into entradasalida(Fecha,HoraEntrada,HoraSalida,Empleado_idEmpleado,`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`) 
+ values(Fecha,HoraEntrada,HoraSalida,Empleado_idEmpleado,`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`); 
  end$$ 
  DELIMITER ;
 
@@ -213,10 +213,10 @@ Fecha date,
 HoraEntrada time,
 HoraSalida time,
 Empleado_idEmpleado int,
-`Empleado_Fichas Ocupacionales_idFichas Ocupacionales` int)
+`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales` int)
 begin 
  update entradasalida 
- set Fecha=Fecha,HoraEntrada=HoraEntrada,HoraSalida=HoraSalida,Empleado_idEmpleado=Empleado_idEmpleado,`Empleado_Fichas Ocupacionales_idFichas Ocupacionales`=`Empleado_Fichas Ocupacionales_idFichas Ocupacionales`
+ set Fecha=Fecha,HoraEntrada=HoraEntrada,HoraSalida=HoraSalida,Empleado_idEmpleado=Empleado_idEmpleado,`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`=`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`
 where idEntradaSalida=idEntradaSalida; 
  end$$ 
  DELIMITER ;
@@ -240,7 +240,7 @@ begin
  end$$ 
  DELIMITER ;
 
- /*----Inserción fichas ocupacionales---------*/
+ /*----Inserción Fichas_Ocupacionales---------*/
 drop procedure if exists sp_insertarFichasOcupacionales;
 DELIMITER $$
 create procedure sp_insertarFichasOcupacionales(
@@ -251,15 +251,15 @@ Funciones varchar(45),
 Requisitos varchar(45),
 `Salario Base` varchar(45))
 begin 
- insert into `fichas ocupacionales`(`Nombre Cargo`,Area,Definicion,Funciones,Requisitos,`Salario Base`) values(`Nombre Cargo`,Area,Definicion,Funciones,Requisitos,`Salario Base`); 
+ insert into `Fichas_Ocupacionales`(`Nombre Cargo`,Area,Definicion,Funciones,Requisitos,`Salario Base`) values(`Nombre Cargo`,Area,Definicion,Funciones,Requisitos,`Salario Base`); 
  end$$ 
  DELIMITER ;
 
- /*----Modificación  fichas ocupacionales---------*/
+ /*----Modificación  Fichas_Ocupacionales---------*/
 drop procedure if exists sp_modificarFichasOcupacionales;
 DELIMITER $$
 create procedure sp_modificarFichasOcupacionales(
-`idFichas Ocupacionales` int,
+`idFichas_Ocupacionales` int,
 `Nombre Cargo` varchar(45),
 Area varchar(45),
 Definicion varchar(45),
@@ -267,28 +267,28 @@ Funciones varchar(45),
 Requisitos varchar(45),
 `Salario Base` varchar(45))
 begin 
- update fichas ocupacionales 
+ update Fichas_Ocupacionales 
  set `Nombre Cargo`=`Nombre Cargo`,Area=Area,Definicion=Definicion,Funciones=Funciones,Requisitos=Requisitos,`Salario Base`=`Salario Base`
-where `idFichas Ocupacionales`=`idFichas Ocupacionales`; 
+where `idFichas_Ocupacionales`=`idFichas_Ocupacionales`; 
  end$$ 
  DELIMITER ;
 
- /*----Obtención fichas ocupacionales---------*/
+ /*----Obtención Fichas_Ocupacionales---------*/
 drop procedure if exists sp_modificarFichasOcupacionales;
 DELIMITER $$
 create procedure sp_obtenerFichasOcupacionales()
 BEGIN 
- select * from fichas ocupacionales;
+ select * from Fichas_Ocupacionales;
  end$$ 
  DELIMITER ;
 
- /*----ObtenerPorID fichas ocupacionales---------*/
+ /*----ObtenerPorID Fichas_Ocupacionales---------*/
 drop procedure if exists sp_obtenerPorIDFichasOcupacionales;
 DELIMITER $$
 create procedure sp_obtenerPorIDFichasOcupacionales(
-`idFichas Ocupacionales` int)
+`idFichas_Ocupacionales` int)
 begin 
- select * from fichas ocupacionales where `idFichas Ocupacionales`=`idFichas Ocupacionales`;
+ select * from Fichas_Ocupacionales where `idFichas_Ocupacionales`=`idFichas_Ocupacionales`;
  end$$ 
  DELIMITER ;
 
@@ -347,9 +347,9 @@ create procedure sp_insertarPagos(
 Monto varchar(45),
 FechaPago varchar(45),
 Empleado_idEmpleado int,
-`Empleado_Fichas Ocupacionales_idFichas Ocupacionales` int)
+`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales` int)
 begin 
- insert into pagos(Monto,FechaPago,Empleado_idEmpleado,`Empleado_Fichas Ocupacionales_idFichas Ocupacionales`) values(Monto,FechaPago,Empleado_idEmpleado,`Empleado_Fichas Ocupacionales_idFichas Ocupacionales`); 
+ insert into pagos(Monto,FechaPago,Empleado_idEmpleado,`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`) values(Monto,FechaPago,Empleado_idEmpleado,`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`); 
  end$$ 
  DELIMITER ;
 
@@ -361,10 +361,10 @@ idPagos int,
 Monto varchar(45),
 FechaPago varchar(45),
 Empleado_idEmpleado int,
-`Empleado_Fichas Ocupacionales_idFichas Ocupacionales` int)
+`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales` int)
 begin 
  update pagos 
- set Monto=Monto,FechaPago=FechaPago,Empleado_idEmpleado=Empleado_idEmpleado,`Empleado_Fichas Ocupacionales_idFichas Ocupacionales`=`Empleado_Fichas Ocupacionales_idFichas Ocupacionales`
+ set Monto=Monto,FechaPago=FechaPago,Empleado_idEmpleado=Empleado_idEmpleado,`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`=`Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`
 where idPagos=idPagos; 
  end$$ 
  DELIMITER ;

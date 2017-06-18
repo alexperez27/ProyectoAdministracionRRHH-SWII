@@ -24,5 +24,10 @@ namespace Sistema_académico.Negocio
         {
             return DEmpleado.reporteNominaEmpleados(fecha);
         }
+
+        public static DataTable reporteEmpleados()
+        {
+            return DEmpleado.mostrarTodos();
+        }
     }
 }

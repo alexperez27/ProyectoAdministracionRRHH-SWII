@@ -22,17 +22,17 @@ CREATE SCHEMA IF NOT EXISTS `sistemaGestionRRHH` DEFAULT CHARACTER SET utf8 COLL
 USE `sistemaGestionRRHH` ;
 
 -- -----------------------------------------------------
--- Table `sistemaGestionRRHH`.`Fichas Ocupacionales`
+-- Table `sistemaGestionRRHH`.`Fichas_Ocupacionales`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `sistemaGestionRRHH`.`Fichas Ocupacionales` (
-  `idFichas Ocupacionales` INT NOT NULL AUTO_INCREMENT COMMENT '',
+CREATE TABLE IF NOT EXISTS `sistemaGestionRRHH`.`Fichas_Ocupacionales` (
+  `idFichas_Ocupacionales` INT NOT NULL AUTO_INCREMENT COMMENT '',
   `Nombre Cargo` VARCHAR(45) NULL COMMENT '',
   `Area` VARCHAR(45) NULL COMMENT '',
   `Definicion` VARCHAR(45) NULL COMMENT '',
   `Funciones` VARCHAR(45) NULL COMMENT '',
   `Requisitos` VARCHAR(45) NULL COMMENT '',
   `Salario Base` VARCHAR(45) NULL COMMENT '',
-  PRIMARY KEY (`idFichas Ocupacionales`)  COMMENT '')
+  PRIMARY KEY (`idFichas_Ocupacionales`)  COMMENT '')
 ENGINE = InnoDB;
 
 
@@ -48,13 +48,13 @@ CREATE TABLE IF NOT EXISTS `sistemaGestionRRHH`.`Empleado` (
   `Telefono` VARCHAR(45) NULL COMMENT '',
   `Estado` VARCHAR(45) NULL COMMENT '',
   `Genero` VARCHAR(1) NOT NULL DEFAULT 0 COMMENT '1 Hombre\n2 Mujer',
-  `Fichas Ocupacionales_idFichas Ocupacionales` INT NOT NULL COMMENT '',
+  `Fichas_Ocupacionales_idFichas_Ocupacionales` INT NOT NULL COMMENT '',
   `FechaContratacion` VARCHAR(45) NULL COMMENT '',
-  PRIMARY KEY (`idEmpleado`, `Fichas Ocupacionales_idFichas Ocupacionales`)  COMMENT '',
-  INDEX `fk_Empleado_Fichas Ocupacionales_idx` (`Fichas Ocupacionales_idFichas Ocupacionales` ASC)  COMMENT '',
-  CONSTRAINT `fk_Empleado_Fichas Ocupacionales`
-    FOREIGN KEY (`Fichas Ocupacionales_idFichas Ocupacionales`)
-    REFERENCES `sistemaGestionRRHH`.`Fichas Ocupacionales` (`idFichas Ocupacionales`)
+  PRIMARY KEY (`idEmpleado`, `Fichas_Ocupacionales_idFichas_Ocupacionales`)  COMMENT '',
+  INDEX `fk_Empleado_Fichas_Ocupacionales_idx` (`Fichas_Ocupacionales_idFichas_Ocupacionales` ASC)  COMMENT '',
+  CONSTRAINT `fk_Empleado_Fichas_Ocupacionales`
+    FOREIGN KEY (`Fichas_Ocupacionales_idFichas_Ocupacionales`)
+    REFERENCES `sistemaGestionRRHH`.`Fichas_Ocupacionales` (`idFichas_Ocupacionales`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -77,14 +77,14 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `sistemaGestionRRHH`.`Empleado_has_Vacaciones` (
   `Empleado_idEmpleado` INT NOT NULL AUTO_INCREMENT COMMENT '',
-  `Empleado_Fichas Ocupacionales_idFichas Ocupacionales` INT NOT NULL COMMENT '',
+  `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales` INT NOT NULL COMMENT '',
   `Vacaciones_idVacaciones` INT NOT NULL COMMENT '',
-  PRIMARY KEY (`Empleado_idEmpleado`, `Empleado_Fichas Ocupacionales_idFichas Ocupacionales`, `Vacaciones_idVacaciones`)  COMMENT '',
+  PRIMARY KEY (`Empleado_idEmpleado`, `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`, `Vacaciones_idVacaciones`)  COMMENT '',
   INDEX `fk_Empleado_has_Vacaciones_Vacaciones1_idx` (`Vacaciones_idVacaciones` ASC)  COMMENT '',
-  INDEX `fk_Empleado_has_Vacaciones_Empleado1_idx` (`Empleado_idEmpleado` ASC, `Empleado_Fichas Ocupacionales_idFichas Ocupacionales` ASC)  COMMENT '',
+  INDEX `fk_Empleado_has_Vacaciones_Empleado1_idx` (`Empleado_idEmpleado` ASC, `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales` ASC)  COMMENT '',
   CONSTRAINT `fk_Empleado_has_Vacaciones_Empleado1`
-    FOREIGN KEY (`Empleado_idEmpleado` , `Empleado_Fichas Ocupacionales_idFichas Ocupacionales`)
-    REFERENCES `sistemaGestionRRHH`.`Empleado` (`idEmpleado` , `Fichas Ocupacionales_idFichas Ocupacionales`)
+    FOREIGN KEY (`Empleado_idEmpleado` , `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`)
+    REFERENCES `sistemaGestionRRHH`.`Empleado` (`idEmpleado` , `Fichas_Ocupacionales_idFichas_Ocupacionales`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Empleado_has_Vacaciones_Vacaciones1`
@@ -129,15 +129,15 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `sistemaGestionRRHH`.`Empleado_has_Horario` (
   `Empleado_idEmpleado` INT NOT NULL COMMENT '',
-  `Empleado_Fichas Ocupacionales_idFichas Ocupacionales` INT NOT NULL COMMENT '',
+  `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales` INT NOT NULL COMMENT '',
   `Horario_idHorario` INT NOT NULL COMMENT '',
   `Horario_DiaSemana_idDiaSemana` INT NOT NULL COMMENT '',
-  PRIMARY KEY (`Empleado_idEmpleado`, `Empleado_Fichas Ocupacionales_idFichas Ocupacionales`, `Horario_idHorario`, `Horario_DiaSemana_idDiaSemana`)  COMMENT '',
+  PRIMARY KEY (`Empleado_idEmpleado`, `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`, `Horario_idHorario`, `Horario_DiaSemana_idDiaSemana`)  COMMENT '',
   INDEX `fk_Empleado_has_Horario_Horario1_idx` (`Horario_idHorario` ASC, `Horario_DiaSemana_idDiaSemana` ASC)  COMMENT '',
-  INDEX `fk_Empleado_has_Horario_Empleado1_idx` (`Empleado_idEmpleado` ASC, `Empleado_Fichas Ocupacionales_idFichas Ocupacionales` ASC)  COMMENT '',
+  INDEX `fk_Empleado_has_Horario_Empleado1_idx` (`Empleado_idEmpleado` ASC, `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales` ASC)  COMMENT '',
   CONSTRAINT `fk_Empleado_has_Horario_Empleado1`
-    FOREIGN KEY (`Empleado_idEmpleado` , `Empleado_Fichas Ocupacionales_idFichas Ocupacionales`)
-    REFERENCES `sistemaGestionRRHH`.`Empleado` (`idEmpleado` , `Fichas Ocupacionales_idFichas Ocupacionales`)
+    FOREIGN KEY (`Empleado_idEmpleado` , `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`)
+    REFERENCES `sistemaGestionRRHH`.`Empleado` (`idEmpleado` , `Fichas_Ocupacionales_idFichas_Ocupacionales`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Empleado_has_Horario_Horario1`
@@ -156,12 +156,12 @@ CREATE TABLE IF NOT EXISTS `sistemaGestionRRHH`.`Pagos` (
   `Monto` VARCHAR(45) NULL COMMENT '',
   `FechaPago` VARCHAR(45) NULL COMMENT '',
   `Empleado_idEmpleado` INT NOT NULL COMMENT '',
-  `Empleado_Fichas Ocupacionales_idFichas Ocupacionales` INT NOT NULL COMMENT '',
-  PRIMARY KEY (`idPagos`, `Empleado_idEmpleado`, `Empleado_Fichas Ocupacionales_idFichas Ocupacionales`)  COMMENT '',
-  INDEX `fk_Pagos_Empleado1_idx` (`Empleado_idEmpleado` ASC, `Empleado_Fichas Ocupacionales_idFichas Ocupacionales` ASC)  COMMENT '',
+  `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales` INT NOT NULL COMMENT '',
+  PRIMARY KEY (`idPagos`, `Empleado_idEmpleado`, `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`)  COMMENT '',
+  INDEX `fk_Pagos_Empleado1_idx` (`Empleado_idEmpleado` ASC, `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales` ASC)  COMMENT '',
   CONSTRAINT `fk_Pagos_Empleado1`
-    FOREIGN KEY (`Empleado_idEmpleado` , `Empleado_Fichas Ocupacionales_idFichas Ocupacionales`)
-    REFERENCES `sistemaGestionRRHH`.`Empleado` (`idEmpleado` , `Fichas Ocupacionales_idFichas Ocupacionales`)
+    FOREIGN KEY (`Empleado_idEmpleado` , `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`)
+    REFERENCES `sistemaGestionRRHH`.`Empleado` (`idEmpleado` , `Fichas_Ocupacionales_idFichas_Ocupacionales`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -176,12 +176,12 @@ CREATE TABLE IF NOT EXISTS `sistemaGestionRRHH`.`EntradaSalida` (
   `HoraEntrada` TIME NULL COMMENT '',
   `HoraSalida` TIME NULL COMMENT '',
   `Empleado_idEmpleado` INT NOT NULL COMMENT '',
-  `Empleado_Fichas Ocupacionales_idFichas Ocupacionales` INT NOT NULL COMMENT '',
-  PRIMARY KEY (`idEntradaSalida`, `Empleado_idEmpleado`, `Empleado_Fichas Ocupacionales_idFichas Ocupacionales`)  COMMENT '',
-  INDEX `fk_EntradaSalida_Empleado1_idx` (`Empleado_idEmpleado` ASC, `Empleado_Fichas Ocupacionales_idFichas Ocupacionales` ASC)  COMMENT '',
+  `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales` INT NOT NULL COMMENT '',
+  PRIMARY KEY (`idEntradaSalida`, `Empleado_idEmpleado`, `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`)  COMMENT '',
+  INDEX `fk_EntradaSalida_Empleado1_idx` (`Empleado_idEmpleado` ASC, `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales` ASC)  COMMENT '',
   CONSTRAINT `fk_EntradaSalida_Empleado1`
-    FOREIGN KEY (`Empleado_idEmpleado` , `Empleado_Fichas Ocupacionales_idFichas Ocupacionales`)
-    REFERENCES `sistemaGestionRRHH`.`Empleado` (`idEmpleado` , `Fichas Ocupacionales_idFichas Ocupacionales`)
+    FOREIGN KEY (`Empleado_idEmpleado` , `Empleado_Fichas_Ocupacionales_idFichas_Ocupacionales`)
+    REFERENCES `sistemaGestionRRHH`.`Empleado` (`idEmpleado` , `Fichas_Ocupacionales_idFichas_Ocupacionales`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;

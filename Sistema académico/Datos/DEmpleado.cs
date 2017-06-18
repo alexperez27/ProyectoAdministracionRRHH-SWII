@@ -175,9 +175,36 @@ namespace Sistema_académico.Datos
             return rpta;
         }
 
-        public static DataTable reporteNominaEmpleados(DateTime fecha)
+        public static DataTable mostrarTodos()
         {
             DataTable tabla = new DataTable();
+            MySqlConnection SqlCon = new MySqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion.MySQL;
+                SqlCon.Open();
+                MySqlCommand SqlCmd = new MySqlCommand("SELECT * FROM sistemagestionrrhh.vista_ReporteEmpleados;", SqlCon);
+
+                MySqlDataAdapter SqlDat = new MySqlDataAdapter(SqlCmd);                
+                SqlDat.Fill(tabla);
+            }
+            catch (Exception ex)
+            {
+                //System.Windows.Forms.MessageBox.Show(ex.ToString());
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace.ToString());
+                tabla = null;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return tabla;
+        }
+
+        public static DataTable reporteNominaEmpleados(DateTime fecha)
+        {
+            DataTable tabla = null;
             MySqlConnection SqlCon = new MySqlConnection();
             try
             {
@@ -186,11 +213,13 @@ namespace Sistema_académico.Datos
                 MySqlCommand SqlCmd = new MySqlCommand("SELECT * FROM sistemagestionrrhh.vista_reportenominaempleados;", SqlCon);
 
                 MySqlDataAdapter SqlDat = new MySqlDataAdapter(SqlCmd);
+                tabla = new DataTable();
                 SqlDat.Fill(tabla);
             }
             catch (Exception ex)
             {
                 System.Windows.Forms.MessageBox.Show(ex.ToString());
+                tabla = null;
             }
             finally
             {
