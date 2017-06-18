@@ -32,7 +32,7 @@ namespace Sistema_académico.Presentación.Paneles
                     this.Invoke(new Action(() => {
                         dataTableEstudiantes.Columns.Clear();
                         dataTableEstudiantes.DataSource = datos;
-                        //this.dataTableEstudiantes.Columns[0].IsVisible = false;
+                        this.dataTableEstudiantes.Columns[0].IsVisible = false;
                     }));
                 }
                 else

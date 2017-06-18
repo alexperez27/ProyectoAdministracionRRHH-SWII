@@ -123,6 +123,14 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.office2013LightTheme1 = new Telerik.WinControls.Themes.Office2013LightTheme();
             this.office2007SilverTheme1 = new Telerik.WinControls.Themes.Office2007SilverTheme();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtSalarioBase = new Telerik.WinControls.UI.RadTextBox();
+            this.txtArea = new Telerik.WinControls.UI.RadTextBox();
+            this.txtCargo = new Telerik.WinControls.UI.RadTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
@@ -194,6 +202,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.radButton16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel23)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSalarioBase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtArea)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCargo)).BeginInit();
             this.SuspendLayout();
             // 
             // radPanel1
@@ -215,7 +228,7 @@
             this.radPageView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radPageView1.Location = new System.Drawing.Point(0, 0);
             this.radPageView1.Name = "radPageView1";
-            this.radPageView1.SelectedPage = this.radPageViewPage2;
+            this.radPageView1.SelectedPage = this.radPageViewPage1;
             this.radPageView1.Size = new System.Drawing.Size(1143, 630);
             this.radPageView1.TabIndex = 0;
             this.radPageView1.Text = "radPageView1";
@@ -248,40 +261,44 @@
             this.dataTableEstudiantes.MasterTemplate.AllowDragToGroup = false;
             this.dataTableEstudiantes.MasterTemplate.AllowEditRow = false;
             this.dataTableEstudiantes.MasterTemplate.AllowSearchRow = true;
+            this.dataTableEstudiantes.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
             gridViewTextBoxColumn1.HeaderText = "ID";
             gridViewTextBoxColumn1.Name = "column1";
+            gridViewTextBoxColumn1.Width = 42;
             gridViewTextBoxColumn2.HeaderText = "Nombres ";
             gridViewTextBoxColumn2.Name = "column2";
-            gridViewTextBoxColumn2.Width = 170;
+            gridViewTextBoxColumn2.Width = 142;
             gridViewTextBoxColumn3.HeaderText = "Apellidos";
             gridViewTextBoxColumn3.Name = "column3";
-            gridViewTextBoxColumn3.Width = 170;
+            gridViewTextBoxColumn3.Width = 142;
             gridViewTextBoxColumn4.HeaderText = "Cédula";
             gridViewTextBoxColumn4.Name = "column4";
-            gridViewTextBoxColumn4.Width = 120;
+            gridViewTextBoxColumn4.Width = 100;
             gridViewTextBoxColumn5.HeaderText = "Edad";
             gridViewTextBoxColumn5.Name = "column5";
+            gridViewTextBoxColumn5.Width = 42;
             gridViewTextBoxColumn6.HeaderText = "Género";
             gridViewTextBoxColumn6.Name = "column9";
+            gridViewTextBoxColumn6.Width = 42;
             gridViewTextBoxColumn7.HeaderText = "Dirección domiciliar";
             gridViewTextBoxColumn7.Name = "column6";
-            gridViewTextBoxColumn7.Width = 310;
+            gridViewTextBoxColumn7.Width = 258;
             gridViewMaskBoxColumn1.ExcelExportType = Telerik.WinControls.UI.Export.DisplayFormatType.None;
             gridViewMaskBoxColumn1.HeaderText = "Teléfono";
             gridViewMaskBoxColumn1.Mask = "(999)0000-0000";
             gridViewMaskBoxColumn1.MaskType = Telerik.WinControls.UI.MaskType.Standard;
             gridViewMaskBoxColumn1.Name = "column7";
             gridViewMaskBoxColumn1.ReadOnly = true;
-            gridViewMaskBoxColumn1.Width = 120;
+            gridViewMaskBoxColumn1.Width = 100;
             gridViewCheckBoxColumn1.EnableExpressionEditor = false;
             gridViewCheckBoxColumn1.Expression = "";
             gridViewCheckBoxColumn1.HeaderText = "Habilitado";
             gridViewCheckBoxColumn1.Name = "column8";
-            gridViewCheckBoxColumn1.Width = 130;
+            gridViewCheckBoxColumn1.Width = 108;
             gridViewCheckBoxColumn1.WrapText = true;
             gridViewMaskBoxColumn2.HeaderText = "Fecha de contratación";
             gridViewMaskBoxColumn2.Name = "column10";
-            gridViewMaskBoxColumn2.Width = 120;
+            gridViewMaskBoxColumn2.Width = 99;
             this.dataTableEstudiantes.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn1,
             gridViewTextBoxColumn2,
@@ -304,6 +321,7 @@
             // radGroupBox1
             // 
             this.radGroupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this.radGroupBox1.Controls.Add(this.groupBox1);
             this.radGroupBox1.Controls.Add(this.radDateTimePicker1);
             this.radGroupBox1.Controls.Add(this.labelParentesco);
             this.radGroupBox1.Controls.Add(this.radMaskedEditBox2);
@@ -349,7 +367,7 @@
             // 
             this.radDateTimePicker1.Location = new System.Drawing.Point(486, 117);
             this.radDateTimePicker1.Name = "radDateTimePicker1";
-            this.radDateTimePicker1.Size = new System.Drawing.Size(219, 26);
+            this.radDateTimePicker1.Size = new System.Drawing.Size(219, 20);
             this.radDateTimePicker1.TabIndex = 28;
             this.radDateTimePicker1.TabStop = false;
             this.radDateTimePicker1.Text = "miércoles, 30 de noviembre de 2016";
@@ -378,7 +396,7 @@
             // 
             // 
             this.radMaskedEditBox2.RootElement.MinSize = new System.Drawing.Size(0, 24);
-            this.radMaskedEditBox2.Size = new System.Drawing.Size(272, 26);
+            this.radMaskedEditBox2.Size = new System.Drawing.Size(272, 24);
             this.radMaskedEditBox2.TabIndex = 24;
             this.radMaskedEditBox2.TabStop = false;
             this.radMaskedEditBox2.ThemeName = "Breeze";
@@ -393,7 +411,7 @@
             // 
             // 
             this.radTextBox3.RootElement.MinSize = new System.Drawing.Size(0, 24);
-            this.radTextBox3.Size = new System.Drawing.Size(452, 26);
+            this.radTextBox3.Size = new System.Drawing.Size(452, 24);
             this.radTextBox3.TabIndex = 23;
             this.radTextBox3.ThemeName = "Breeze";
             // 
@@ -450,7 +468,7 @@
             this.radDropDownList1.Items.Add(radListDataItem1);
             this.radDropDownList1.Location = new System.Drawing.Point(81, 119);
             this.radDropDownList1.Name = "radDropDownList1";
-            this.radDropDownList1.Size = new System.Drawing.Size(272, 23);
+            this.radDropDownList1.Size = new System.Drawing.Size(272, 20);
             this.radDropDownList1.TabIndex = 19;
             this.radDropDownList1.ThemeName = "Breeze";
             // 
@@ -497,7 +515,7 @@
             // 
             // 
             this.radMaskedEditBox1.RootElement.MinSize = new System.Drawing.Size(0, 24);
-            this.radMaskedEditBox1.Size = new System.Drawing.Size(272, 26);
+            this.radMaskedEditBox1.Size = new System.Drawing.Size(272, 24);
             this.radMaskedEditBox1.TabIndex = 11;
             this.radMaskedEditBox1.TabStop = false;
             this.radMaskedEditBox1.Text = "(505)____-____";
@@ -541,25 +559,25 @@
             // 
             // radRadioButton2
             // 
-            this.radRadioButton2.Location = new System.Drawing.Point(763, 71);
+            this.radRadioButton2.Location = new System.Drawing.Point(635, 180);
             this.radRadioButton2.Name = "radRadioButton2";
-            this.radRadioButton2.Size = new System.Drawing.Size(74, 19);
+            this.radRadioButton2.Size = new System.Drawing.Size(70, 18);
             this.radRadioButton2.TabIndex = 6;
             this.radRadioButton2.Text = "Femenino";
             this.radRadioButton2.ThemeName = "Breeze";
             // 
             // radRadioButton1
             // 
-            this.radRadioButton1.Location = new System.Drawing.Point(762, 47);
+            this.radRadioButton1.Location = new System.Drawing.Point(634, 156);
             this.radRadioButton1.Name = "radRadioButton1";
-            this.radRadioButton1.Size = new System.Drawing.Size(76, 19);
+            this.radRadioButton1.Size = new System.Drawing.Size(71, 18);
             this.radRadioButton1.TabIndex = 5;
             this.radRadioButton1.Text = "Masculino";
             this.radRadioButton1.ThemeName = "Breeze";
             // 
             // radLabel4
             // 
-            this.radLabel4.Location = new System.Drawing.Point(711, 47);
+            this.radLabel4.Location = new System.Drawing.Point(583, 156);
             this.radLabel4.Name = "radLabel4";
             this.radLabel4.Size = new System.Drawing.Size(45, 18);
             this.radLabel4.TabIndex = 4;
@@ -574,7 +592,7 @@
             // 
             // 
             this.txtApellido_estudiante.RootElement.MinSize = new System.Drawing.Size(0, 24);
-            this.txtApellido_estudiante.Size = new System.Drawing.Size(272, 26);
+            this.txtApellido_estudiante.Size = new System.Drawing.Size(272, 24);
             this.txtApellido_estudiante.TabIndex = 3;
             this.txtApellido_estudiante.ThemeName = "Breeze";
             this.txtApellido_estudiante.TextChanged += new System.EventHandler(this.txtApellido_estudiante_TextChanged);
@@ -596,7 +614,7 @@
             // 
             // 
             this.txtNombre_estudiante.RootElement.MinSize = new System.Drawing.Size(0, 24);
-            this.txtNombre_estudiante.Size = new System.Drawing.Size(272, 26);
+            this.txtNombre_estudiante.Size = new System.Drawing.Size(272, 24);
             this.txtNombre_estudiante.TabIndex = 1;
             this.txtNombre_estudiante.ThemeName = "Breeze";
             this.txtNombre_estudiante.TextChanged += new System.EventHandler(this.txtNombre_estudiante_TextChanged);
@@ -1057,6 +1075,101 @@
             this.radLabel23.TabIndex = 0;
             this.radLabel23.Text = "Descripción:";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.flowLayoutPanel1);
+            this.groupBox1.Location = new System.Drawing.Point(714, 38);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(163, 166);
+            this.groupBox1.TabIndex = 29;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Puesto Laboral";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.label1);
+            this.flowLayoutPanel1.Controls.Add(this.txtCargo);
+            this.flowLayoutPanel1.Controls.Add(this.label2);
+            this.flowLayoutPanel1.Controls.Add(this.txtArea);
+            this.flowLayoutPanel1.Controls.Add(this.label3);
+            this.flowLayoutPanel1.Controls.Add(this.txtSalarioBase);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 19);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(3);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(157, 144);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Cargo";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 48);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 15);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Area";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 93);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 15);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Salario base";
+            // 
+            // txtSalarioBase
+            // 
+            this.txtSalarioBase.Location = new System.Drawing.Point(6, 111);
+            this.txtSalarioBase.MinimumSize = new System.Drawing.Size(0, 24);
+            this.txtSalarioBase.Name = "txtSalarioBase";
+            this.txtSalarioBase.ReadOnly = true;
+            // 
+            // 
+            // 
+            this.txtSalarioBase.RootElement.MinSize = new System.Drawing.Size(0, 24);
+            this.txtSalarioBase.Size = new System.Drawing.Size(148, 24);
+            this.txtSalarioBase.TabIndex = 29;
+            this.txtSalarioBase.ThemeName = "Breeze";
+            // 
+            // txtArea
+            // 
+            this.txtArea.Location = new System.Drawing.Point(6, 66);
+            this.txtArea.MinimumSize = new System.Drawing.Size(0, 24);
+            this.txtArea.Name = "txtArea";
+            this.txtArea.ReadOnly = true;
+            // 
+            // 
+            // 
+            this.txtArea.RootElement.MinSize = new System.Drawing.Size(0, 24);
+            this.txtArea.Size = new System.Drawing.Size(148, 24);
+            this.txtArea.TabIndex = 30;
+            this.txtArea.ThemeName = "Breeze";
+            // 
+            // txtCargo
+            // 
+            this.txtCargo.Location = new System.Drawing.Point(6, 21);
+            this.txtCargo.MinimumSize = new System.Drawing.Size(0, 24);
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.ReadOnly = true;
+            // 
+            // 
+            // 
+            this.txtCargo.RootElement.MinSize = new System.Drawing.Size(0, 24);
+            this.txtCargo.Size = new System.Drawing.Size(148, 24);
+            this.txtCargo.TabIndex = 30;
+            this.txtCargo.ThemeName = "Breeze";
+            // 
             // Gestionar_informacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1138,6 +1251,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.radButton16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel23)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSalarioBase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtArea)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCargo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1210,5 +1329,13 @@
         private Telerik.WinControls.UI.RadTextBox radTextBox2;
         private Telerik.WinControls.UI.RadGridView radGridView1;
         private Telerik.WinControls.Themes.Office2007SilverTheme office2007SilverTheme1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label label1;
+        private Telerik.WinControls.UI.RadTextBox txtCargo;
+        private System.Windows.Forms.Label label2;
+        private Telerik.WinControls.UI.RadTextBox txtArea;
+        private System.Windows.Forms.Label label3;
+        private Telerik.WinControls.UI.RadTextBox txtSalarioBase;
     }
 }
